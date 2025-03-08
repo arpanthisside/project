@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+*{
+    font-family: Outfit;
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eae7e1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: #000000;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Landing Page */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+/* Left Image */
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+.left img {
+    max-width: 80%;  /* Reduce size to 80% of the container */
+    width: 30em;    /* Set a fixed smaller width (adjust as needed) */
+    height: auto;    /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-left: 1.2em;
+}
+
+
+/* Right Side - Typing Animation */
+.right {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    min-height: 40px; /* Ensures text does not shift elements below */
+}
+
+button {
+    background-color: #ff7700;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px; /* Keeps button at a fixed position */
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ae6f11;
+}
+
+.container, .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.zigzag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.description, .button {
+    flex: 1;
+    text-align: center;
+}
+.button button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button button:hover {
+    background-color: #218838;
+}
+

@@ -1,0 +1,11 @@
+﻿Farmer_ID,Farmer_Name,Land_Area,Location,Crop_Type,Water_Availability,Market_Access,Farming_Experience,Yield_Per_Year,Farming_Method,Fertilizer_Used,Machinery_Availability,Annual_Income,Preferred_Crop,Neighboring_Farmers
+1,Ravi  ,5,Village A  ,Wheat  ,3,10,12,5000,Organic  ,Yes  ,Yes  ,200000,Wheat  ,"2,3  "
+2,Amit  ,8,Village B  ,Rice  ,2,15,8,7000,Conventional  ,No  ,Yes  ,250000,Rice  ,"1,5  "
+3,Suresh  ,6,Village A  ,Wheat  ,3,8,15,6000,Organic  ,Yes  ,No  ,220000,Wheat  ,"1,7  "
+4,Anita  ,7,Village C  ,Maize  ,1,20,10,5500,Mixed  ,Yes  ,Yes  ,180000,Maize  ,"6,9  "
+5,Pooja  ,4,Village B  ,Rice  ,2,12,7,4500,Conventional  ,No  ,No  ,160000,Rice  ,"2,8  "
+6,Kiran  ,9,Village C  ,Maize  ,1,18,20,8000,Mixed  ,Yes  ,Yes  ,300000,Maize  ,"4,9  "
+7,Raj  ,3,Village A  ,Wheat  ,3,7,5,4000,Organic  ,Yes  ,No  ,150000,Wheat  ,"3,10  "
+8,Meena  ,5,Village B  ,Rice  ,2,14,9,7500,Conventional  ,No  ,Yes  ,260000,Rice  ,"5,9  "
+9,Vikas  ,8,Village C  ,Maize  ,1,22,18,8500,Mixed  ,Yes  ,Yes  ,310000,Maize  ,"4,6  "
+10,Sunita  ,6,Village A  ,Wheat  ,3,9,11,6500,Organic  ,Yes  ,No  ,210000,Wheat  ,7

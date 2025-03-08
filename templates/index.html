@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarvestHarmony</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='image hh main.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">HarvestHarmony</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Page Content -->
+    <div class="container">
+        <div class="left">
+            <img src="{{ url_for('static', filename='Screenshot_2025-03-07_154228-removebg-preview.png') }}" alt="Farming">
+        </div>
+        <div class="right">
+            <h1><span id="typing-text"></span></h1>
+            <form action="\process" method="post">
+                <input type="hidden" name="choice" value="yes">
+                <button type="submit">Explore Coalition Analysis</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Zig-Zag Sections -->
+    <div class="section zigzag">
+        <div class="description left">
+            <h2>Manual-Clustering </h2>
+            <p>Leverage ML-powered analytics to optimize crop yields and resource management by manually customizing the features based on which you would like to form clusters</p>
+        </div>
+        <div class="button right">
+            <button onclick="location.href='\process1'">Get Involved</button>
+        </div>
+    </div>
+
+    <div class="section zigzag">
+        <div class="button left">
+            <button onclick="location.href='#'">Discover Tools</button>
+        </div>
+        <div class="description right">
+            <h2>Precision Agriculture</h2>
+            <p>Utilize modern techniques like soil mapping and automated irrigation for efficient farming.</p>
+        </div>
+    </div>
+
+    <div class="section zigzag">
+        <div class="description left">
+            <h2>Community & Support</h2>
+            <p>Join a network of farmers, agronomists, and experts to share knowledge and insights.</p>
+        </div>
+        <div class="button right">
+            <button onclick="location.href='#'">Get Involved</button>
+        </div>
+    </div>
+</body>
+</html>

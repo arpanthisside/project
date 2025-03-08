@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Clustering</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='image hh main.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_process1.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Manual Clustering Tool</h1>
+        <form method="POST">
+            <label for="features">Select features for clustering:</label><br>
+{% for feature in principal_features %}
+    <div class="checkbox-container">
+        <input type="checkbox" id="{{ feature }}" name="features" value="{{ feature }}">
+        <label for="{{ feature }}">{{ feature }}</label>
+    </div>
+{% endfor %}
+            <br>
+            <button type="submit">Run Clustering</button>
+        </form>
+
+        {% if selected_features %}
+            <div class="plot">
+                <h2>Selected Features for Coalition</h2>
+                <p>{{ selected_features }}</p>
+            </div>
+        {% endif %}
+
+        {% if scatter_plot %}
+            <div class="plot">
+                <h2>2D Scatter Plot of Clusters</h2>
+                <img src="data:image/png;base64,{{ scatter_plot }}" alt="Scatter Plot">
+            </div>
+        {% endif %}
+
+        {% if radar_chart %}
+            <div class="plot">
+                <h2>Radar Chart of Cluster Profiles</h2>
+                <img src="data:image/png;base64,{{ radar_chart }}" alt="Radar Chart">
+            </div>
+        {% endif %}
+
+        {% if clustered_data %}
+            <div class="plot">
+                <h2>Clustered Data</h2>
+                {{ clustered_data | safe }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
